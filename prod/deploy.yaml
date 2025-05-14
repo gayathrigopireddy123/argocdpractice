@@ -3,6 +3,23 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
+<<<<<<< HEAD
+    app: lwweb1
+  name: lwweb1
+=======
+<<<<<<< HEAD
+    app: lwweb
+  name: lwweb
+>>>>>>> 249dbbb (argocd with helm)
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+<<<<<<< HEAD
+      app: lwweb1
+=======
+      app: lwweb
+=======
     app: lwweb1
   name: lwweb1
 spec:
@@ -10,12 +27,22 @@ spec:
   selector:
     matchLabels:
       app: lwweb1
+>>>>>>> 4b7f872 (helm charts)
+>>>>>>> 249dbbb (argocd with helm)
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
+<<<<<<< HEAD
         app: lwweb1
+=======
+<<<<<<< HEAD
+        app: lwweb
+=======
+        app: lwweb1
+>>>>>>> 4b7f872 (helm charts)
+>>>>>>> 249dbbb (argocd with helm)
     spec:
       containers:
       - image: nginx
